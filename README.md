@@ -1,9 +1,9 @@
 # Chi tiết giao diện ứng dụng
 ## Dự án quản lí kho xe, lập trình mobile
 
-Các màn hình hiển thị trong dự án.
+### Các màn hình hiển thị trong dự án.
 
-Màn hình chờ.
+#### Màn hình chờ.
 
 ![](images/man_hinhdau.jpg)
 
@@ -17,25 +17,25 @@ Menu
 
 
 
-Màn hình chính
+#### Màn hình chính
 
 ![](images/manhinhchih.jpg)
 
 
 
-Màn hình kho xe
+#### Màn hình kho xe
 
 
 ![](images/khoxe.jpg)
 
 
 
-Màn hình thống kê
+#### Màn hình thống kê
 
 ![](images/thongke.jpg)
 
 
 
-Màn hình giới thiệu
+#### Màn hình giới thiệu
 
 ![](images/gioithieu.jpg)
