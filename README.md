@@ -1,4 +1,4 @@
-# assignmentFinal
+# Chi tiết giao diện ứng dụng
 Dự án quản lí kho xe, lập trình mobile
 
 Các màn hình hiển thị trong dự án.
