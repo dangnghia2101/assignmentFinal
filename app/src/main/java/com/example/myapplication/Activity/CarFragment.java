@@ -1,5 +1,6 @@
 package com.example.myapplication.Activity;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -37,9 +38,6 @@ public class  CarFragment extends Fragment {
     private RecyclerView myRecyclerView;
     private List<Car> list;
 
-
-    ImageView imageView;
-
     public CarFragment() {
     }
 
@@ -61,7 +59,14 @@ public class  CarFragment extends Fragment {
 
         list = new ArrayList<>();
         list =(new CarDAO(getContext())).get();
-
     }
 
+    public void updateList(List<Car> list){
+
+        myRecyclerView = (RecyclerView) view.findViewById(R.id.fargment_car_recyclerview);
+
+        MyAdapterKhoXe adapter = new MyAdapterKhoXe(getContext(), list);
+        myRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        myRecyclerView.setAdapter(adapter);
+    }
 }

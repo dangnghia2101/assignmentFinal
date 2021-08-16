@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                intent_detail();
-                //startActivity(new Intent(MainActivity.this, NavigationDrawble.class));
+                //intent_detail();
+                    startActivity(new Intent(MainActivity.this, NavigationDrawble.class));
             }
         });
 

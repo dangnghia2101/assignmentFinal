@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.CarFragment">
+    tools:context=".Activity.XuatLoaiCar">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rc_history_car"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:id="@+id/fargment_car_recyclerview"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main_fragmentCar"
-    tools:context=".Activity.CarFragment">
+    tools:context=".Activity.ui.ThoatFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
+
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fargment_car_recyclerview"/>
-
-
+        android:scaleType="fitXY"
+        android:src="@drawable/car_out" />
 </FrameLayout>

@@ -2,7 +2,6 @@ package com.example.myapplication.Adapter;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -11,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +23,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.Activity.OutCarActivity;
 import com.example.myapplication.DAO.CarDAO;
 import com.example.myapplication.DAO.HISTORYDAO;
 import com.example.myapplication.Model.Car;
@@ -32,7 +31,6 @@ import com.example.myapplication.R;
 
 import java.io.ByteArrayOutputStream;
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -148,7 +146,7 @@ public class MyAdapterKhoXe extends RecyclerView.Adapter<ViewHolderKhoXe>{
                             HISTORYDAO historydao = new HISTORYDAO(context);
                             historydao.insert(new XuatXe(UUID.randomUUID().toString(), tenNguoiNhan, tenXe, soDienThoai, diaChiNhan, tienPhi, date+"", imageViewToByte(dImv), categry));
 
-                            new OutCarActivity();
+                            //new OutCarActivity();
 
                             myDialog.dismiss();
                             Toast.makeText(context, "Xuất xe thành công", Toast.LENGTH_SHORT).show();

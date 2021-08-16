@@ -31,8 +31,6 @@ public class GalleryFragment extends Fragment {
                 new ViewModelProvider(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
 
-        smoothBottomBar = (SmoothBottomBar) root.findViewById(R.id.smoothBarOutCar);
-
         mTabLayout = root.findViewById(R.id.tab_layout);
         mViewPager = root.findViewById(R.id.view_page);
 
@@ -43,6 +41,5 @@ public class GalleryFragment extends Fragment {
         mTabLayout.setupWithViewPager(mViewPager);
 
         return root;
-
     }
 }

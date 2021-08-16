@@ -72,7 +72,7 @@ public class AddCarActivity extends AppCompatActivity {
                     CarDAO dao = new CarDAO(AddCarActivity.this);
                     dao.insert(car);
                     Toast.makeText(AddCarActivity.this, "Đã thêm xe "+NameCar, Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(AddCarActivity.this, ListCarActivity.class));
+                    startActivity(new Intent(AddCarActivity.this, NavigationDrawble.class));
                 }
 
             }

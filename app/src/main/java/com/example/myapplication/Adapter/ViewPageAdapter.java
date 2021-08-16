@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.myapplication.Activity.CarFragment;
 import com.example.myapplication.Activity.CarOutFragment;
+import com.example.myapplication.Activity.LoaiCarFragment;
 
 public class ViewPageAdapter extends FragmentStatePagerAdapter{
 
@@ -20,17 +21,18 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter{
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new CarFragment();
+                return new LoaiCarFragment();
             case 1:
+                return new CarFragment();
+            case 2:
                 return new CarOutFragment();
-
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Nullable
@@ -39,9 +41,12 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter{
         String title = "";
         switch (position){
             case 0:
-                title = "Kho xe";
+                title = "Loại xe";
                 break;
             case 1:
+                title = "Kho xe";
+                break;
+            case 2:
                 title = "Lịch sử";
                 break;
         }

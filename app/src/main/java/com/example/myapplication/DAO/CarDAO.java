@@ -53,10 +53,11 @@ public class CarDAO implements ICarDao{
     }
 
     @Override
-    public Car get(String Id_Car) {
+    public List<Car> get(String loai_car) {
         Car car = null;
+        List<Car> list = new ArrayList<>();
         SQLiteDatabase db=database.getReadableDatabase();
-        Cursor cursor=db.rawQuery("SELECT * FROM "+ AppConstant.TABLE_CAR +" where "+AppConstant.ID_CAR+" = ?",new String[]{Id_Car});
+        Cursor cursor=db.rawQuery("SELECT * FROM "+ AppConstant.TABLE_CAR +" where "+AppConstant.CATEGORY_CAR+" = ?",new String[]{loai_car});
         while (cursor.moveToNext()){
             String Id=cursor.getString(0);
             String NameCar=cursor.getString(1);
@@ -64,10 +65,10 @@ public class CarDAO implements ICarDao{
             String DInput=cursor.getString(3);
             String Note=cursor.getString(4);
             byte[] Image=cursor.getBlob(5);
-            new Car(Id, NameCar, LoaiXe, DInput, Note, Image);
+            list.add(new Car(Id, NameCar, LoaiXe, DInput, Note, Image));
         }
         cursor.close();
-        return car;
+        return list;
     }
 
     @Override

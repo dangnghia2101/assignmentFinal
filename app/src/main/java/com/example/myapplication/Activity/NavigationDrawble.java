@@ -1,5 +1,6 @@
 package com.example.myapplication.Activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -27,6 +28,7 @@ public class NavigationDrawble extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setBackgroundColor(Color.BLUE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

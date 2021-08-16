@@ -4,36 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg"
+    tools:context=".Activity.ui.GioiThieuFragment">
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        app:srcCompat="@drawable/menu_detail"
-        tools:layout_editor_absoluteX="-11dp"
-        tools:layout_editor_absoluteY="-14dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_detail" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
         android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile_detail" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/car_testla" />
 
     <TextView
@@ -41,24 +41,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/robotoslab_extrabold"
         android:text="Status"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView10"
-        android:fontFamily="@font/robotoslab_extrabold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotoslab_extrabold"
         android:text="Địa chỉ"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -95,44 +95,46 @@
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nagivation" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@null"-->
+<!--        android:scaleType="fitStart"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/nagivation" />-->
 
     <TextView
         android:id="@+id/textView14"
-        android:textSize="16dp"
-        android:fontFamily="@font/robotoslab_extrabold"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robotoslab_extrabold"
         android:text="12 Quang Trung, Gò Vấp, Hồ Chí Minh"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
         android:src="@drawable/paner1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="551dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
         android:fontFamily="@font/robotoslab_extrabold"
         android:text="Mở cửa"
         android:textColor="@color/white"
@@ -144,7 +146,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="12dp"
         android:fontFamily="@font/robotoslab_extrabold"
         android:text="Chi nhánh"
         android:textColor="@color/white"
@@ -156,7 +157,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
-        android:layout_marginTop="12dp"
         android:fontFamily="@font/robotoslab_extrabold"
         android:text="Lượt truy cập"
         android:textColor="@color/white"

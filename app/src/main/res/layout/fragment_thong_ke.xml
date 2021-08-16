@@ -53,9 +53,11 @@
             android:id="@+id/constraintLayout4"
             android:layout_width="match_parent"
             android:layout_height="220dp"
+            android:layout_marginBottom="1dp"
             android:background="@drawable/bogocthongke"
-            app:layout_constraintBottom_toTopOf="@+id/smoothBottomBarThongKe"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
@@ -236,7 +238,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.github.mikephil.charting.charts.PieChart
+        <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/activity_thongke_chart"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -293,17 +295,17 @@
     <!--        app:layout_constraintEnd_toEndOf="parent"-->
     <!--        app:layout_constraintTop_toBottomOf="@+id/textView23" />-->
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/robotoslab_extrabold"
-        android:text="Biểu đồ thống kê"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_thongke_chart" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/robotoslab_extrabold"
+            android:text="Biểu đồ thống kê"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_thongke_chart" />
 
     <TextView
         android:id="@+id/tvTongDoanhThu"
@@ -371,19 +373,6 @@
             android:text=" Xe thường đã bán"/>
     </LinearLayout>
 
-        <me.ibrahimsn.lib.SmoothBottomBar
-            android:id="@+id/smoothBottomBarThongKe"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:backgroundColor="#353A40"
-            app:iconTint="#757575"
-            app:iconTintActive="#212121"
-            app:indicatorColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/navigation_menu"
-            app:textColor="@color/black" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

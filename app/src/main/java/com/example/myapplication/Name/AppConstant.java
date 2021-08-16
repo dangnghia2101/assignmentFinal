@@ -11,11 +11,10 @@ public class AppConstant {
     public static final String NOTE_CAR = "Note_car";
     public static final String IMAGE_CAR = "ImageCar";
 
-    public static final String TABLE_CHIPHI = "TABLECHIPHI";
-    public static final String ID_CHIPHI = "IDCHIPHI";
-    public static final String PRICE_CHIPHI = "PRICECHIPHI";
-    public static final String NAME_PRICE_CHIPHI = "NAMEPRICECHIPHI";
-    public static final String NOTE_CHIPHI = "NOTECHIPHI";
+    public static final String TABLE_LOAICAR = "LOAICAR";
+    public static final String NAME_LOAICAR = "Category_car";
+    public static final String IMAGE_LOAICAR = "IMAGELOAICAR";
+    public static final String DETAIL_LOAICAR = "DETAILLOAICAR";
 
 
     public static final String TABLE_USER = "TABLEUSER";

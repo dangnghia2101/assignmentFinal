@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.myapplication.Activity.ThongKeActivity;
 import com.example.myapplication.DAO.CarDAO;
 import com.example.myapplication.DAO.HISTORYDAO;
 import com.example.myapplication.R;
@@ -84,7 +83,6 @@ public class ThongKeFragment extends Fragment {
 
         tvTongThu = (TextView) view.findViewById(R.id.tvTongDoanhThu);
 
-        smoothBottomBar = view.findViewById(R.id.smoothBottomBarThongKe);
 
         // Chart
         chart = view.findViewById(R.id.activity_thongke_chart);

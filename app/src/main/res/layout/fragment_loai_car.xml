@@ -4,12 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.CarFragment">
+    tools:context=".Activity.LoaiCarFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rc_history_car"
+        android:id="@+id/rc_loaiCar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
 
+    <ImageButton
+        android:id="@+id/btnAddLoaiCar"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

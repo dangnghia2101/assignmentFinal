@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ICarDao {
     List<Car> get();
-    Car get(String Id_Car);
+    List<Car> get(String loai_xe);
     void insert(Car car);
     void update(Car car);
     void delete(String Id_Car);

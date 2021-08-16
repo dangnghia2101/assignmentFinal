@@ -28,4 +28,16 @@
         android:name="com.example.myapplication.Activity.ThongKe.ThongKeFragment"
         android:label="fragment_thong_ke"
         tools:layout="@layout/fragment_thong_ke" />
+
+    <fragment
+        android:id="@+id/nav_gioithieu"
+        android:name="com.example.myapplication.Activity.ui.GioiThieuFragment"
+        android:label="fragment_thong_ke"
+        tools:layout="@layout/fragment_gioi_thieu" />
+
+    <fragment
+        android:id="@+id/nav_thoat"
+        android:name="com.example.myapplication.Activity.ui.ThoatFragment"
+        android:label="Thoát"
+        tools:layout="@layout/fragment_gioi_thieu" />
 </navigation>
