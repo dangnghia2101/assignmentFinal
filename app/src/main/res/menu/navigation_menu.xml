@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu1"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:id="@+id/menu2"
+        android:title="Kho xe"
+        android:icon="@drawable/ic_baseline_category_24"/>
+    <item android:id="@+id/menu3"
+        android:title="Thống kê"
+        android:icon="@drawable/ic_baseline_pie_chart_24"/>
+</menu>

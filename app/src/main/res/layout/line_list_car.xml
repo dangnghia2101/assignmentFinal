@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#353A40"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imvCarItem"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car1" />
+
+    <TextView
+        android:id="@+id/txtNameCarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:text="Lambogini X"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLoaiXeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Vượt giới hạn thời gian"
+        android:textColor="#E1DDDD"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameCarItem" />
+
+    <TextView
+        android:id="@+id/txtNgayNhapItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:text="21-01-2021"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoaiXeItem" />
+
+    <TextView
+        android:id="@+id/txtGhiChuItem"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:text="Ghi chú"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoaiXeItem" />
+
+    <TextView
+        android:id="@+id/txtSoLuongCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="91dp"
+        android:text="3"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtGhiChuItem"
+        app:srcCompat="@drawable/ngaynhap" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="91dp"
+        app:layout_constraintStart_toEndOf="@+id/txtNgayNhapItem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconcar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#353A40"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_khoxe">
+
+
+    <ImageView
+        android:id="@+id/imvCarItemKho"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car1" />
+
+    <TextView
+        android:id="@+id/txtNameCarItemKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:text="Lambogini X"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItemKho"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLoaiXeItemKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Vượt giới hạn thời gian"
+        android:textColor="#E1DDDD"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItemKho"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameCarItemKho" />
+
+    <TextView
+        android:id="@+id/txtNgayNhapItemKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:text="21-01-2021"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoaiXeItemKho" />
+
+    <TextView
+        android:id="@+id/txtGhiChuItemKho"
+        android:fontFamily="@font/robotoslab_extrabold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:text="Ghi chú"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItemKho"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoaiXeItemKho" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/imvCarItemKho"
+        app:layout_constraintTop_toBottomOf="@+id/txtGhiChuItemKho"
+        app:srcCompat="@drawable/ngaynhap" />
+
+    <ImageButton
+        android:id="@+id/ibtnItemKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="22dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
